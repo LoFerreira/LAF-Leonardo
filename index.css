@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-home,
+.content-about,
+.content-project {
+    background-color: white;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+    background-color: gray;
+}
+
+.nav-bar .logo {
+    font-size: 400%;
+}
+
+.nav-bar a {
+    font-size: large;
+    color: black;
+    margin: auto;
+    font-size: 160%;
+}
+
+.nav-bar a:link {
+    text-decoration: none;
+}
+
+.content-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid black;
+}
+
+.text-home {
+    font-size: 140%;
+    width: 60%;
+}
+
+.content-Eu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-left: 3%;
+    padding: 1% 0% 1%;
+    border: 1px solid black;
+    box-shadow: 5px 5px grey;
+    background-color: white;
+}
+
+.LogoEu {
+    width: 85%;
+    margin-bottom: 4%;
+}
+
+.content-Eu p {
+    font-size: 130%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+.BtnCV {
+    width: 35%;
+    height: 30px;
+    background-color: grey;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.content-Eu a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.content-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+    border-bottom: 1px solid black;
+}
+
+.text-about {
+    width: 80%;
+    font-size: 150%;
+    padding-top: 5%;
+}
+
+.card-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-about img {
+    width: 10%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.content-project {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    border-bottom: 1px solid black;
+}
+
+.content-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card-project {
+    width: 20%;
+    text-align: center;
+    margin-top: 5%;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 2px 2px;
+}
+
+.card-title {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.card-title span {
+    font-size: 150%;
+}
+
+.card-content img {
+    width: 100%;
+    padding: 5%;
+}
+
+.card-content p {
+    padding: 0% 5% 0%;
+}
+
+.btn {
+    padding: 5% 0% 5%;
+}
+
+.btnCodigo {
+    width: 25%;
+    height: 25px;
+    background-color: grey;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btnCodigo a {
+    text-decoration: none;
+    color: black;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPortfolio a {
+    text-decoration: none;
+    color: black;
+    font-size: 130%;
+}
+
+.btnPortfolio {
+    margin-top: 5%;
+    width: 14%;
+    height: 35px;
+    background-color: gray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    padding: 1% 2% 1%;
+    width: auto;
+}
+
+.email-icon {
+    width: 40px;
+}
+
+.insta-icon {
+    width: 32px;
+}
+
+.whats-icon {
+    width: 33px;
+    height: 33px;
+}
+
+.email-content,
+.insta-content,
+.whats-content {
+    padding-left: 5%;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: black;
+    font-size: 130%;
+}
