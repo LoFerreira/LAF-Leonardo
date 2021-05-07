@@ -14,37 +14,58 @@ html {
     scroll-behavior: smooth;
 }
 
-.nav-bar {
+.nav-menu {
     display: flex;
-    flex-wrap: nowrap;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 10%;
-    z-index: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
     background-color: gray;
 }
 
-.nav-bar .logo {
-    font-size: 400%;
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
 }
 
-.nav-bar a {
-    font-size: large;
-    color: black;
-    margin: auto;
-    font-size: 160%;
-}
-
-.nav-bar a:link {
+.nav-ul li a {
+    display: inline-block;
+    color: #000;
+    margin: 10px 20px;
     text-decoration: none;
+    font-size: 200%;
+    padding-right: 50px;
+}
+
+.logo {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    font-size: 400%;
+    padding-left: 30px;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus {
+    outline: none;
 }
 
 .content-home {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 12%;
+    padding-top: 8%;
     padding-bottom: 10%;
     border-bottom: 1px solid black;
 }
@@ -61,7 +82,7 @@ html {
     align-items: center;
     justify-content: center;
     width: 20%;
-    margin-left: 3%;
+    margin-right: 3%;
     padding: 1% 0% 1%;
     border: 1px solid black;
     box-shadow: 5px 5px grey;
@@ -198,13 +219,13 @@ html {
 .btn {
     margin: 3% 0% 5%;
     border-top: 2px solid grey;
-    cursor: pointer;
 }
 
 .btnCodigo {
+    cursor: pointer;
+    width: 20%;
     font-size: 90%;
-    margin-top: 1%;
-    width: 25%;
+    margin-top: 5%;
     height: 25px;
     background-color: grey;
     border-radius: 5px;
@@ -225,15 +246,19 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 .btnPortfolio a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: black;
 }
 
 .btnPortfolio {
-    width: 120%;
+    width: 100%;
     height: 35px;
     background-color: gray;
     border-radius: 5px;
@@ -243,6 +268,7 @@ html {
     -o-border-radius: 5px;
     font-size: 130%;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
 
 .footer {
@@ -257,7 +283,6 @@ html {
     display: flex;
     flex-direction: row;
     padding: 1% 2% 1%;
-    width: auto;
 }
 
 .email-icon {
@@ -298,6 +323,10 @@ html {
     .card-content {
         height: 310px;
     }
+    .nav-ul li a {
+        font-size: 150%;
+        padding-right: 30px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -310,6 +339,13 @@ html {
     .card-content {
         height: 290px;
     }
+    .nav-ul li a {
+        font-size: 150%;
+        padding-right: 15px;
+    }
+    .content-Eu p {
+        font-size: 75%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -317,7 +353,8 @@ html {
         font-size: 65%;
     }
     .text-home,
-    .text-about {
+    .text-about,
+    .card-content p {
         font-size: 110%;
     }
     .card-content p {
@@ -331,6 +368,42 @@ html {
     }
     .footer-content {
         font-size: 90%;
+    }
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-ul.show {
+        display: flex;
+        z-index: 1;
+    }
+    .hamburger {
+        display: block;
+        padding-right: 30px;
+        font-size: 30px;
+    }
+    .nav-ul li a {
+        padding: 10px;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-content a {
+        font-size: 100%;
+    }
+    .email-icon {
+        width: 30px;
+        height: 15px;
+    }
+    .insta-icon {
+        width: 20px;
+    }
+    .whats-icon {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -359,5 +432,88 @@ html {
     .text-home,
     .text-about {
         font-size: 95%;
+    }
+    .logo {
+        font-size: 300%;
+    }
+    .hamburger {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content-Eu p {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6%;
+        font-size: 80%;
+    }
+    .BtnCV {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .content-home {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-home {
+        padding-top: 5%;
+    }
+    .content-Eu {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        font-size: 250%;
+    }
+    .hamburger {
+        font-size: 20px;
+    }
+    .card-project {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 461px) {
+    .text-home {
+        font-size: 90%;
+    }
+    .content-Eu {
+        width: 35%;
+    }
+    .footer-content a {
+        font-size: 80%;
+    }
+    .email-icon {
+        width: 30px;
+        height: 15px;
+    }
+    .insta-icon {
+        width: 20px;
+    }
+    .whats-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .email-icon {
+        width: 25px;
+        height: 15px;
+    }
+    .insta-icon {
+        width: 15px;
+    }
+    .whats-icon {
+        width: 15px;
+        height: 15px;
+    }
+    .footer-content a {
+        font-size: 75%;
     }
 }

@@ -7,42 +7,33 @@
     <title>Leonardo de Almeida Ferreira</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
 <body>
 
     <div class="content">
-        <div class="nav-bar">
-            <a class="logo" href="index.html">
-                &lt;LAF /&gt;
-            </a>
 
-            <a href="#home">
-                Home
-            </a>
-            <a href="#about">
-                Sobre mim
-            </a>
-            <a href="#project">
-                Portfólio
-            </a>
-            <a href="#contact">
-                Contato
-            </a>
+        <div class="container">
+            <nav class="nav-menu">
+                <a class="logo" href="index.html">
+                    &lt;LAF /&gt;
+                </a>
+
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-ul" id="nav-ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#project">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
 
         <div class="content-home" id="home">
-            <div class="text-home">
-                <h1>Bem Vindo</h1><br>
-                <p>Estudante de Ciência da Computação procurando o primeiro emprego na área de desenvolvimento web. Gosto de estudar acerca das diversas linguagens de programação.</p><br>
-                <p>Meus hobbies do cotidiano são estudar, gosto muito de conhecer e absorver as experiências sobre os muitos assuntos que a vida tem, assim como aproveitar as mais variadas oportunidades que a mesma oferece. Pratico atividades físicas diariamente,
-                    afinal acredito que mente e corpo trabalham em conjuntos, procuro ler livros sobre conhecimentos de diversas áreas e aprender um pouco mais no dia a dia.</p><br>
-                <p>Uma frase que me representa muito é do livro "<b>Os segredos da mente milionária</b>" do autor T. Harv Eker, que diz:</p><br>
-                <p><b>“A ação é a ponte entre o mundo interior e o mundo exterior.”</b></p><br>
-                <p>Acredito fortemente que todos somos os protagonistas de nossas próprias histórias, e o que difere alguém que pratica a tão famosa caminhada dos 10 mil passos de alguém que sonha com isso é, justamente, a ação de começar com um único passo
-                    e, assim, evoluir a cada dia.
-                </p>
-            </div>
             <div class="content-Eu">
                 <img src="img/eu.png" class="LogoEu">
                 <b><p>Leonardo de Almeida Ferreira</p></b>
@@ -53,6 +44,17 @@
                         </button>
                     </div>
                 </a>
+            </div>
+            <div class="text-home">
+                <h1>Bem Vindo</h1><br>
+                <p>Estudante de Ciência da Computação procurando o primeiro emprego na área de desenvolvimento web. Gosto de estudar acerca das diversas linguagens de programação.</p><br>
+                <p>Meus hobbies do cotidiano são estudar, gosto muito de conhecer e absorver as experiências sobre os muitos assuntos que a vida tem, assim como aproveitar as mais variadas oportunidades que a mesma oferece. Pratico atividades físicas diariamente,
+                    afinal acredito que mente e corpo trabalham em conjuntos, procuro ler livros sobre conhecimentos de diversas áreas e aprender um pouco mais no dia a dia.</p><br>
+                <p>Uma frase que me representa muito é do livro "<b>Os segredos da mente milionária</b>" do autor T. Harv Eker, que diz:</p><br>
+                <p><b>“A ação é a ponte entre o mundo interior e o mundo exterior.”</b></p><br>
+                <p>Acredito fortemente que todos somos os protagonistas de nossas próprias histórias, e o que difere alguém que pratica a tão famosa caminhada dos 10 mil passos de alguém que sonha com isso é, justamente, a ação de começar com um único passo
+                    e, assim, evoluir a cada dia.
+                </p>
             </div>
         </div>
 
@@ -142,7 +144,7 @@
             <div class="portfolio">
                 <a href="https://github.com/LoFerreira?tab=repositories">
                     <button class="btnPortfolio">
-                        Acessar meu portfólio  
+                       <p> Acessar meu portfólio  </p>
                     </button>
                 </a>
             </div>
@@ -151,7 +153,6 @@
 
         <div class="footer" id="contact">
             <div class="footer-content">
-
                 <img src="img/email.png" class="email-icon">
                 <div class="email-content">
                     <a href="mailto:leonardo10sp@gmail.com">
@@ -182,7 +183,7 @@
 
 
     </div>
-
+    <script src='scrypt.js'></script>
 </body>
 
 </html>
