@@ -12,6 +12,13 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 83px;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-menu {
@@ -29,9 +36,21 @@ html {
     justify-content: center;
     padding: 0;
     list-style-type: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.nav-ul li a {
+.menu {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-ul li a,
+.menu li a {
     display: inline-block;
     color: #000;
     margin: 10px 20px;
@@ -55,6 +74,7 @@ html {
     font-size: 20px;
     cursor: pointer;
     display: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger:focus {
@@ -65,7 +85,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 8%;
+    padding-top: 3%;
+    margin-top: 12%;
     padding-bottom: 10%;
     border-bottom: 1px solid black;
 }
@@ -372,19 +393,21 @@ html {
     }
     .nav-ul {
         display: none;
-        flex-direction: column;
         width: 100%;
     }
-    .nav-ul.show {
+    .menu.show {
         display: flex;
-        z-index: 1;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        background-color: gray;
     }
     .hamburger {
         display: block;
         padding-right: 30px;
         font-size: 30px;
     }
-    .nav-ul li a {
+    .menu li a {
         padding: 10px;
     }
     .footer {
