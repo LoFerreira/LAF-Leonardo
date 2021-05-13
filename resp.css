@@ -1,0 +1,267 @@
+@media only screen and (max-width: 1250px) {
+    .content-Eu p {
+        font-size: 85%;
+    }
+    .card-title span {
+        font-size: 120%;
+    }
+    .card-content p {
+        font-size: 90%;
+    }
+    .card-content {
+        height: 310px;
+    }
+    .nav-ul li a {
+        font-size: 150%;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .btnCodigo {
+        width: 35%;
+    }
+    .card-content p {
+        font-size: 80%;
+    }
+    .card-content {
+        height: 290px;
+    }
+    .nav-ul li a {
+        font-size: 150%;
+        padding-right: 15px;
+    }
+    .content-Eu p {
+        font-size: 75%;
+    }
+    .content-title {
+        width: 30%;
+    }
+    .card-about i {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .content-Eu p {
+        font-size: 65%;
+    }
+    .text-home,
+    .text-about,
+    .card-content p {
+        font-size: 110%;
+    }
+    .card-content p {
+        font-size: 70%;
+    }
+    .card-content {
+        height: 250px;
+    }
+    .btnPortfolio {
+        font-size: 95%;
+    }
+    .footer-content {
+        font-size: 90%;
+    }
+    .nav-ul {
+        display: none;
+        width: 100%;
+    }
+    .nav-menu.leleo {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .menu.show {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: black;
+        background-color: #008037;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .hamburger {
+        display: block;
+        padding-right: 30px;
+        font-size: 30px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-content a {
+        font-size: 100%;
+    }
+    .content-title {
+        width: 35%;
+    }
+    .card-about i {
+        font-size: 60px;
+        margin-right: 60px;
+    }
+    .fa-envelope {
+        font-size: 30px;
+    }
+    .fa-instagram {
+        font-size: 30px;
+    }
+    .fa-whatsapp {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav-bar {
+        height: 7%;
+    }
+    .nav-bar .logo {
+        font-size: 300%;
+    }
+    .card-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-project {
+        width: 40%;
+    }
+    .card-content p {
+        font-size: 85%;
+    }
+    .card-content {
+        height: 320px;
+    }
+    .text-home,
+    .text-about {
+        font-size: 95%;
+    }
+    .logo {
+        font-size: 300%;
+    }
+    .hamburger {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content-Eu p {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6%;
+        font-size: 80%;
+    }
+    .BtnCV {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .content-home {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-home {
+        padding-top: 5%;
+    }
+    .content-Eu {
+        width: 30%;
+    }
+    .content-title {
+        width: 40%;
+    }
+    .card-about i {
+        font-size: 60px;
+        margin-right: 45px;
+    }
+    .fa-envelope {
+        font-size: 25px;
+    }
+    .fa-instagram {
+        font-size: 25px;
+    }
+    .fa-whatsapp {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        font-size: 250%;
+    }
+    .hamburger {
+        font-size: 20px;
+    }
+    .card-project {
+        width: 60%;
+    }
+    .content-home {
+        padding-top: 20%;
+    }
+    .content-title {
+        width: 45%;
+    }
+    .card-about i {
+        font-size: 40px;
+        margin-right: 45px;
+        margin-top: 65px;
+    }
+    .fa-envelope {
+        font-size: 20px;
+    }
+    .fa-instagram {
+        font-size: 20px;
+    }
+    .fa-whatsapp {
+        font-size: 20px;
+    }
+    .whats-content {
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 461px) {
+    .text-home {
+        font-size: 90%;
+    }
+    .content-Eu {
+        width: 35%;
+    }
+    .footer-content a {
+        font-size: 80%;
+    }
+    .content-title {
+        width: 50%;
+    }
+    .card-about i {
+        font-size: 35px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content-title {
+        width: 55%;
+    }
+    .card-about i {
+        font-size: 30px;
+        margin-right: 35px;
+    }
+    .fa-envelope {
+        font-size: 15px;
+    }
+    .fa-instagram {
+        font-size: 15px;
+    }
+    .fa-whatsapp {
+        font-size: 15px;
+    }
+    .whats-content {
+        width: 90px;
+    }
+}

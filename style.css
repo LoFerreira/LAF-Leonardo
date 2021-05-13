@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 
-.content-home,
-.content-about,
-.content-project {
+body {
     background-color: white;
+    /*background-color: #202020;*/
 }
 
 html {
@@ -27,7 +26,9 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    background-color: gray;
+    background-color: #008037;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .nav-ul {
@@ -88,7 +89,7 @@ html {
     padding-top: 3%;
     margin-top: 12%;
     padding-bottom: 10%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #008037;
 }
 
 .text-home {
@@ -106,7 +107,7 @@ html {
     margin-right: 3%;
     padding: 1% 0% 1%;
     border: 1px solid black;
-    box-shadow: 5px 5px grey;
+    box-shadow: 5px 5px #008037;
     background-color: white;
 }
 
@@ -128,13 +129,14 @@ html {
 .BtnCV {
     width: 120px;
     height: 30px;
-    background-color: grey;
+    background-color: #008037;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 
 .content-Eu a:link {
@@ -148,7 +150,8 @@ html {
     align-items: center;
     justify-content: center;
     padding-bottom: 10%;
-    border-bottom: 1px solid black;
+    width: 100%;
+    border-bottom: 1px solid #008037;
 }
 
 .text-about {
@@ -160,28 +163,54 @@ html {
 
 .card-about {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
 
-.card-about img {
-    width: 10%;
-    padding-top: 5%;
-    padding-bottom: 3%;
+.card-about i {
+    font-size: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.card-about i:last-child {
+    margin-right: 0;
+}
+
+.fa-html5 {
+    color: #e44d26;
+}
+
+.fa-css3-alt {
+    color: #2194f3;
+}
+
+.fa-js-square {
+    color: #e4b942;
+}
+
+.fa-git-square {
+    color: #f05030;
 }
 
 .content-project {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 10%;
-    border-bottom: 1px solid black;
 }
 
 .content-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 7%;
+    background-color: #008037;
+    width: 25%;
+    height: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -196,7 +225,7 @@ html {
     text-align: center;
     margin-top: 5%;
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid #008037;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -210,7 +239,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
+    background-color: #008037;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -239,7 +268,7 @@ html {
 
 .btn {
     margin: 3% 0% 5%;
-    border-top: 2px solid grey;
+    border-top: 2px solid #008037;
 }
 
 .btnCodigo {
@@ -248,12 +277,13 @@ html {
     font-size: 90%;
     margin-top: 5%;
     height: 25px;
-    background-color: grey;
+    background-color: #008037;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    border: none;
 }
 
 .btnCodigo a {
@@ -281,8 +311,9 @@ html {
 .btnPortfolio {
     width: 100%;
     height: 35px;
-    background-color: gray;
+    background-color: #008037;
     border-radius: 5px;
+    padding: 0px 7px 0px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -290,34 +321,36 @@ html {
     font-size: 130%;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
+    border: none;
 }
 
 .footer {
     display: flex;
-    flex-direction: row;
-    background-color: gray;
     align-items: center;
     justify-content: center;
+    background-color: #008037;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .footer-content {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    padding: 1% 2% 1%;
+    padding: 10px 2% 10px;
 }
 
-.email-icon {
-    width: 40px;
+.fa-envelope {
+    font-size: 35px;
 }
 
-.insta-icon {
-    width: 32px;
-    height: 32px;
+.fa-instagram {
+    font-size: 35px;
 }
 
-.whats-icon {
-    width: 33px;
-    height: 33px;
+.fa-whatsapp {
+    font-size: 35px;
 }
 
 .email-content,
@@ -326,221 +359,12 @@ html {
     padding-left: 5%;
 }
 
+.whats-content {
+    width: 150px;
+}
+
 .footer-content a {
     text-decoration: none;
     color: black;
     font-size: 130%;
-}
-
-@media only screen and (max-width: 1250px) {
-    .content-Eu p {
-        font-size: 85%;
-    }
-    .card-title span {
-        font-size: 120%;
-    }
-    .card-content p {
-        font-size: 90%;
-    }
-    .card-content {
-        height: 310px;
-    }
-    .nav-ul li a {
-        font-size: 150%;
-        padding-right: 30px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .btnCodigo {
-        width: 35%;
-    }
-    .card-content p {
-        font-size: 80%;
-    }
-    .card-content {
-        height: 290px;
-    }
-    .nav-ul li a {
-        font-size: 150%;
-        padding-right: 15px;
-    }
-    .content-Eu p {
-        font-size: 75%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .content-Eu p {
-        font-size: 65%;
-    }
-    .text-home,
-    .text-about,
-    .card-content p {
-        font-size: 110%;
-    }
-    .card-content p {
-        font-size: 70%;
-    }
-    .card-content {
-        height: 250px;
-    }
-    .btnPortfolio {
-        font-size: 95%;
-    }
-    .footer-content {
-        font-size: 90%;
-    }
-    .nav-ul {
-        display: none;
-        width: 100%;
-    }
-    .menu.show {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        width: 100%;
-        background-color: gray;
-    }
-    .hamburger {
-        display: block;
-        padding-right: 30px;
-        font-size: 30px;
-    }
-    .menu li a {
-        padding: 10px;
-    }
-    .footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .footer-content a {
-        font-size: 100%;
-    }
-    .email-icon {
-        width: 30px;
-        height: 15px;
-    }
-    .insta-icon {
-        width: 20px;
-        height: 20px;
-    }
-    .whats-icon {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .nav-bar {
-        height: 7%;
-    }
-    .nav-bar .logo {
-        font-size: 300%;
-    }
-    .card-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-project {
-        width: 40%;
-    }
-    .card-content p {
-        font-size: 85%;
-    }
-    .card-content {
-        height: 320px;
-    }
-    .text-home,
-    .text-about {
-        font-size: 95%;
-    }
-    .logo {
-        font-size: 300%;
-    }
-    .hamburger {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .content-Eu p {
-        display: flex;
-        flex-direction: column;
-        margin-left: 6%;
-        font-size: 80%;
-    }
-    .BtnCV {
-        width: 100px;
-    }
-}
-
-@media only screen and (max-width: 675px) {
-    .content-home {
-        display: flex;
-        flex-direction: column;
-    }
-    .text-home {
-        padding-top: 5%;
-    }
-    .content-Eu {
-        width: 30%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .logo {
-        font-size: 250%;
-    }
-    .hamburger {
-        font-size: 20px;
-    }
-    .card-project {
-        width: 60%;
-    }
-}
-
-@media only screen and (max-width: 461px) {
-    .text-home {
-        font-size: 90%;
-    }
-    .content-Eu {
-        width: 35%;
-    }
-    .footer-content a {
-        font-size: 80%;
-    }
-    .email-icon {
-        width: 30px;
-        height: 15px;
-    }
-    .insta-icon {
-        width: 20px;
-        height: 20px;
-    }
-    .whats-icon {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .email-icon {
-        width: 25px;
-        height: 15px;
-    }
-    .insta-icon {
-        width: 15px;
-        height: 15px;
-    }
-    .whats-icon {
-        width: 15px;
-        height: 15px;
-    }
-    .footer-content a {
-        font-size: 75%;
-    }
 }
