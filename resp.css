@@ -188,6 +188,9 @@
     .fa-whatsapp {
         font-size: 25px;
     }
+    .menu li a {
+        font-size: 150%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -262,17 +265,17 @@
         margin-right: 35px;
     }
     .footer {
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     .fa-envelope {
-        font-size: 13px;
+        font-size: 12px;
     }
     .fa-instagram {
-        font-size: 13px;
+        font-size: 12px;
     }
     .fa-whatsapp {
-        font-size: 13px;
+        font-size: 12px;
     }
     .whats-content {
         width: 100px;
