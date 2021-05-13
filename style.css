@@ -263,6 +263,7 @@ html {
 
 .card-content p {
     padding: 0% 5% 5%;
+    text-align: justify;
     font-family: 'Open Sans', sans-serif;
 }
 
