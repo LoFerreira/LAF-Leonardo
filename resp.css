@@ -242,6 +242,15 @@
         font-size: 35px;
         margin-right: 40px;
     }
+    .fa-envelope {
+        font-size: 15px;
+    }
+    .fa-instagram {
+        font-size: 15px;
+    }
+    .fa-whatsapp {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -253,15 +262,18 @@
         margin-right: 35px;
     }
     .fa-envelope {
-        font-size: 15px;
+        font-size: 13px;
     }
     .fa-instagram {
-        font-size: 15px;
+        font-size: 13px;
     }
     .fa-whatsapp {
-        font-size: 15px;
+        font-size: 13px;
     }
     .whats-content {
-        width: 90px;
+        width: 85px;
+    }
+    .footer-content {
+        padding: 10px 7px 10px;
     }
 }
