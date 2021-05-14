@@ -58,6 +58,7 @@ html {
     text-decoration: none;
     font-size: 200%;
     padding-right: 50px;
+    outline: none;
 }
 
 .logo {

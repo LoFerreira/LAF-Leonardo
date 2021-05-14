@@ -122,6 +122,9 @@
     .nav-bar .logo {
         font-size: 300%;
     }
+    .text-home {
+        padding-top: 150px;
+    }
     .card-row {
         display: flex;
         flex-direction: column;
@@ -159,6 +162,12 @@
     .BtnCV {
         width: 100px;
     }
+    .card-row {
+        padding-top: 60px;
+    }
+    .text-about {
+        padding-top: 60px;
+    }
 }
 
 @media only screen and (max-width: 675px) {
@@ -167,7 +176,9 @@
         flex-direction: column;
     }
     .text-home {
-        padding-top: 5%;
+        padding-top: 15%;
+        text-align: justify;
+        width: 80%;
     }
     .content-Eu {
         width: 30%;
@@ -178,6 +189,7 @@
     .card-about i {
         font-size: 60px;
         margin-right: 45px;
+        margin-top: 80px;
     }
     .fa-envelope {
         font-size: 25px;
@@ -212,7 +224,7 @@
     .card-about i {
         font-size: 40px;
         margin-right: 45px;
-        margin-top: 65px;
+        margin-top: 60px;
     }
     .fa-envelope {
         font-size: 20px;
@@ -263,6 +275,7 @@
     .card-about i {
         font-size: 30px;
         margin-right: 35px;
+        margin-top: 50px;
     }
     .footer {
         border-top-left-radius: 20px;
