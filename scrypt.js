@@ -33,3 +33,9 @@ contact.addEventListener('click', () => {
     menu.classList.toggle('show');
     navMenu.classList.toggle('leleo');
 })
+
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+})
