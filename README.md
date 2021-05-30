@@ -2,11 +2,13 @@
 
 ## Site próprio desenvolvido com o objetivo de apresentação profissional da minha pessoa e minhas habilidades de desenvolvimento.
 
-Home:
+![](/assets/gif.gif)
 
-![](/img/home.png)
+### 🛠 Tecnologias
 
-Contato:
+As seguintes ferramentas foram usadas na construção do projeto:
 
-![](/img/contact.png)
+- [HTML]
+- [CSS]
+- [JavaScript]
 
